@@ -1,3 +1,4 @@
+# @psx95
 # Built application files
 *.apk
 *.ap_
@@ -63,3 +64,11 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+
+#node_modules
+node_modules/
+package.json
+package-lock.json
+
+#IDEA Files 
+.idea/
