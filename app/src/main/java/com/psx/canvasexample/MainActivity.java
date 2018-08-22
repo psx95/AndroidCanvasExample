@@ -23,18 +23,22 @@ public class MainActivity extends AppCompatActivity {
     private int offset = OFFSET;
     private static final int MULTIPLIER = 100;
     private int colorBackground, colorAccent, colorRectangle;
+    private MyCanvasView myCanvasView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        /*setContentView(R.layout.activity_main);
         colorBackground = ResourcesCompat.getColor(getResources(), R.color.colorBackground, null);
         colorAccent = ResourcesCompat.getColor(getResources(), R.color.colorAccent, null);
         colorRectangle = ResourcesCompat.getColor(getResources(), R.color.colorRectangle, null);
         paint.setColor(colorBackground);
         paintText.setColor(ResourcesCompat.getColor(getResources(), R.color.colorPrimaryDark, null));
         paintText.setTextSize(70);
-        imageView = findViewById(R.id.myimageview);
+        imageView = findViewById(R.id.myimageview);*/
+        myCanvasView = new MyCanvasView(this,null);
+        myCanvasView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
+        setContentView(myCanvasView);
     }
 
     public void drawSomething(View view) {

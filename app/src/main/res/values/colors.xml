@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorRectangle">#455A64</color>
     <color name="colorBackground">#FFFFD600</color>
+    <color name="opaque_orange">#FFFF5500</color>
+    <color name="opaque_yellow">#FFFFEB3B</color>
 </resources>
